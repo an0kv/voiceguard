@@ -1,0 +1,12 @@
+PySide6>=6.6
+numpy>=1.23
+scipy>=1.10
+sounddevice>=0.4.6
+soundfile>=0.12
+PyYAML>=6.0
+
+# Optional (recommended for real model inference)
+onnxruntime>=1.16; python_version < "3.14"
+
+# Optional (helps with MP3 if libsndfile can't decode it; may require ffmpeg installed)
+pydub>=0.25

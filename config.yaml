@@ -1,0 +1,42 @@
+sample_rate: 16000
+# Для более стабильной и точной оценки ML‑моделью увеличьте окно.
+window_sec: 2.0
+hop_sec: 0.5
+
+alert_threshold: 0.80
+alert_hold_sec: 3.0
+
+model:
+  backend: auto  # auto | heuristic | onnx | hf
+  path: models/voiceguard.onnx
+  # HF (HuggingFace) backend: download a model snapshot into hf_local_dir
+  # and set backend=auto (will pick it up), or set backend=hf explicitly.
+  hf_repo_id: Shahzaib-Arshad/deepfake_audio_detection
+  hf_local_dir: models/hf_shahzaib_deepfake
+  hf_revision: ""
+  n_mels: 64
+  n_fft: 512
+  hop_length: 160
+  win_length: 400
+  fmin: 20
+  fmax: 7600
+
+smoothing:
+  ema_alpha: 0.35
+
+vad:
+  rms_db_threshold: -45.0
+
+enhance:
+  enabled: false
+  bandpass: true
+  bandpass_low_hz: 80
+  bandpass_high_hz: 8000
+  noise_reduction: true
+  noise_strength: 0.80
+  noise_ema: 0.10
+
+storage:
+  store_audio: false
+  store_metadata: true
+  reports_dir: reports

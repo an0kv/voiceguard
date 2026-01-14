@@ -1,0 +1,18 @@
+<resources>
+    <style name="Theme.VoiceGuard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/vg_primary</item>
+        <item name="colorPrimaryVariant">@color/vg_primary_variant</item>
+        <item name="colorSecondary">@color/vg_secondary</item>
+        <item name="android:colorBackground">@color/vg_background</item>
+        <item name="colorSurface">@color/vg_surface</item>
+        <item name="colorOnPrimary">@color/vg_on_primary</item>
+        <item name="colorOnSurface">@color/vg_on_surface</item>
+        <item name="colorOnBackground">@color/vg_on_surface</item>
+        <item name="android:windowBackground">@color/vg_background</item>
+        <item name="android:textColorPrimary">@color/vg_on_surface</item>
+        <item name="android:textColorSecondary">@color/vg_on_surface_muted</item>
+        <item name="android:textColorHint">@color/vg_on_surface_muted</item>
+        <item name="android:statusBarColor">@color/vg_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

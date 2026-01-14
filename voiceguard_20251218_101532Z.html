@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VoiceGuard Report</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    .k { color: #555; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    code, pre { background: #f7f7f7; border-radius: 8px; padding: 2px 6px; }
+    pre { padding: 12px; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>VoiceGuard Report</h1>
+    <div class="card">
+    <div><span class="k">Источник:</span> file — <code>/Users/an1kv/Desktop/ai/4bfe78bb-61fd-407d-a2c4-5ea5853beb47.mp3</code></div>
+    <div><span class="k">Время (UTC):</span> <code>2025-12-18T09:52:51.119489+00:00</code></div>
+    <div><span class="k">Backend:</span> <code>hf</code></div>
+    <div><span class="k">Backend note:</span> <code>—</code></div>
+    <div><span class="k">Длительность:</span> 6.33s</div>
+    <div><span class="k">Окна:</span> 9 (speech: 9)</div>
+    <div><span class="k">Уверенность (mean):</span> 0.918</div>
+    <div><span class="k">Уверенность (min):</span> 0.814</div>
+    <div><span class="k">p_fake overall:</span> 0.997</div>
+    <div><span class="k">p_fake p95:</span> 0.997</div>
+    <div><span class="k">p_fake mean:</span> 0.840</div>
+    <div><span class="k">p_fake max:</span> 0.998</div>
+    <div><span class="k">Fake fraction (>= threshold):</span> 0.778</div>
+  </div>
+  <div class="card">
+    <h2>Сегменты алертов</h2>
+    <ul><li>1.50s — 5.50s</li></ul>
+  </div>
+  <div class="card">
+    <h2>Raw JSON</h2>
+    <pre>{
+  "source_kind": "file",
+  "source": "/Users/an1kv/Desktop/ai/4bfe78bb-61fd-407d-a2c4-5ea5853beb47.mp3",
+  "created_at": "2025-12-18T09:52:51.119489+00:00",
+  "sample_rate": 16000,
+  "window_sec": 2.0,
+  "hop_sec": 0.5,
+  "backend": "hf",
+  "backend_note": "",
+  "windows": [
+    {
+      "t_start": 0.0,
+      "t_end": 2.0,
+      "result": {
+        "p_fake": 0.9936375617980957,
+        "p_fake_smooth": 0.9936375617980957,
+        "confidence": 0.9427040689008536,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -18.243100124147,
+          "zcr": 0.1771930372824151,
+          "spectral_centroid_hz": 683.785400390625,
+          "spectral_bandwidth_hz": 839.7180786132812,
+          "spectral_rolloff_hz": 1109.0,
+          "hf_energy_ratio": 0.003969219047576189,
+          "spectral_flatness": 0.05292972922325134
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 0.5,
+      "t_end": 2.5,
+      "result": {
+        "p_fake": 0.9798593521118164,
+        "p_fake_smooth": 0.988815188407898,
+        "confidence": 0.9485130334467763,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -17.625832133602433,
+          "zcr": 0.18672458514328572,
+          "spectral_centroid_hz": 906.1832885742188,
+          "spectral_bandwidth_hz": 877.17431640625,
+          "spectral_rolloff_hz": 1455.5,
+          "hf_energy_ratio": 0.007181293796747923,
+          "spectral_flatness": 0.059015903621912
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 1.0,
+      "t_end": 3.0,
+      "result": {
+        "p_fake": 0.9975342750549316,
+        "p_fake_smooth": 0.9918668687343597,
+        "confidence": 0.9531766974476034,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -17.704997415945492,
+          "zcr": 0.20616269258414324,
+          "spectral_centroid_hz": 1009.1512451171875,
+          "spectral_bandwidth_hz": 1077.3466796875,
+          "spectral_rolloff_hz": 1482.0,
+          "hf_energy_ratio": 0.014836746267974377,
+          "spectral_flatness": 0.08298102021217346
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)"
+        ]
+      }
+    },
+    {
+      "t_start": 1.5,
+      "t_end": 3.5,
+      "result": {
+        "p_fake": 0.99594646692276,
+        "p_fake_smooth": 0.9932947281002997,
+        "confidence": 0.9531746464490263,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -17.673361900277182,
+          "zcr": 0.2316634894840464,
+          "spectral_centroid_hz": 952.17138671875,
+          "spectral_bandwidth_hz": 1342.1180419921875,
+          "spectral_rolloff_hz": 1444.0,
+          "hf_energy_ratio": 0.02468482404947281,
+          "spectral_flatness": 0.11010553687810898
+        },
+        "reasons": [
+          "низкий spectral roll-off (возможен срез ВЧ)"
+        ]
+      }
+    },
+    {
+      "t_start": 2.0,
+      "t_end": 4.0,
+      "result": {
+        "p_fake": 0.9933708906173706,
+        "p_fake_smooth": 0.9933213849812745,
+        "confidence": 0.9463760844767488,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -18.021765784303366,
+          "zcr": 0.190537204287634,
+          "spectral_centroid_hz": 796.8526000976562,
+          "spectral_bandwidth_hz": 1389.1436767578125,
+          "spectral_rolloff_hz": 1149.0,
+          "hf_energy_ratio": 0.030146759003400803,
+          "spectral_flatness": 0.07655035704374313
+        },
+        "reasons": [
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 2.5,
+      "t_end": 4.5,
+      "result": {
+        "p_fake": 0.99338299036026,
+        "p_fake_smooth": 0.9933429468639194,
+        "confidence": 0.9424172503106073,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -18.25488037716948,
+          "zcr": 0.18003687615237976,
+          "spectral_centroid_hz": 706.9027099609375,
+          "spectral_bandwidth_hz": 843.30322265625,
+          "spectral_rolloff_hz": 1241.5,
+          "hf_energy_ratio": 0.005694995168596506,
+          "spectral_flatness": 0.042766425758600235
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 3.0,
+      "t_end": 5.0,
+      "result": {
+        "p_fake": 0.8462414741516113,
+        "p_fake_smooth": 0.9418574314146116,
+        "confidence": 0.9138686546362109,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -16.991379210313937,
+          "zcr": 0.12109753429794681,
+          "spectral_centroid_hz": 668.7472534179688,
+          "spectral_bandwidth_hz": 614.0524291992188,
+          "spectral_rolloff_hz": 1340.5,
+          "hf_energy_ratio": 0.0007079984643496573,
+          "spectral_flatness": 0.01499897614121437
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 5.5,
+      "result": {
+        "p_fake": 0.3449276089668274,
+        "p_fake_smooth": 0.7329319935578872,
+        "confidence": 0.8430680249431203,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -17.332740471068142,
+          "zcr": 0.09012781649426545,
+          "spectral_centroid_hz": 525.734375,
+          "spectral_bandwidth_hz": 513.425537109375,
+          "spectral_rolloff_hz": 1050.0,
+          "hf_energy_ratio": 0.0005235227290540934,
+          "spectral_flatness": 0.007111547980457544
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    },
+    {
+      "t_start": 4.0,
+      "t_end": 6.0,
+      "result": {
+        "p_fake": 0.4162675440311432,
+        "p_fake_smooth": 0.6220994362235268,
+        "confidence": 0.8144520454462825,
+        "is_speech": true,
+        "indicators": {
+          "rms_db": -17.58923527740697,
+          "zcr": 0.12472264758273696,
+          "spectral_centroid_hz": 436.583251953125,
+          "spectral_bandwidth_hz": 438.25335693359375,
+          "spectral_rolloff_hz": 769.0,
+          "hf_energy_ratio": 0.0005857169744558632,
+          "spectral_flatness": 0.009884781204164028
+        },
+        "reasons": [
+          "низкая доля энергии в ВЧ (возможен срез/кодек/TTS)",
+          "низкий spectral roll-off (возможен срез ВЧ)",
+          "низкая spectral flatness (слишком 'стерильно/тонально')"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "total_windows": 9,
+    "speech_windows": 9,
+    "duration_sec": 6.331,
+    "p_fake_overall": 0.996899151802063,
+    "p_fake_median": 0.9933708906173706,
+    "p_fake_p95": 0.996899151802063,
+    "p_fake_mean": 0.8401297960016463,
+    "p_fake_max": 0.9975342750549316,
+    "fake_fraction": 0.7777777777777778,
+    "confidence_mean": 0.9175278340063588,
+    "confidence_min": 0.8144520454462825,
+    "alert_segments": [
+      {
+        "start_sec": 1.5,
+        "end_sec": 5.5
+      }
+    ]
+  }
+}</pre>
+  </div>
+</body>
+</html>

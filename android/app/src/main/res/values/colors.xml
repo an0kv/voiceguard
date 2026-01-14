@@ -1,0 +1,13 @@
+<resources>
+    <color name="vg_primary">#0ea5a4</color>
+    <color name="vg_primary_variant">#0f766e</color>
+    <color name="vg_secondary">#f59e0b</color>
+    <color name="vg_background">#f6f7fb</color>
+    <color name="vg_surface">#ffffff</color>
+    <color name="vg_on_primary">#ffffff</color>
+    <color name="vg_on_surface">#0f172a</color>
+    <color name="vg_on_surface_muted">#475569</color>
+    <color name="vg_outline">#e2e8f0</color>
+    <color name="vg_warning">#f59e0b</color>
+    <color name="vg_danger">#ef4444</color>
+</resources>

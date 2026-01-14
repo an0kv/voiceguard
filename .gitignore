@@ -1,0 +1,18 @@
+.venv/
+.venv312/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.spec
+.DS_Store
+.idea/
+.vscode/
+
+# App outputs
+reports/
+models/
