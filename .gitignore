@@ -16,3 +16,8 @@ dist/
 # App outputs
 reports/
 models/
+
+# Android local/cache files
+android/.gradle/
+android/**/build/
+android/local.properties
